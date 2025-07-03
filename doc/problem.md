@@ -1,0 +1,2 @@
+1. 本地创建packages/utils,执行pnpm init后修改name为custom-utils，期望在pc中引用，则需要在utils中打包生成dist，并检查其package.json的"main": "dist/index.js","types": "dist/index.d.ts",的main有types正确。并且在pc目录下通过pnpm add custom-utils@workspace:\*才可以，如果直接执行pnpm add custom-utils则如果在npm仓库中有重名的优先会安装npm仓库的包，所以需要指定@workspace:\*。
+2. 

@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-pc": "pnpm --filter pc-demo dev",
+    "dev-mobile": "pnpm --filter mobile dev"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
