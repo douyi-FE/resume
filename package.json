@@ -6,6 +6,7 @@
   "scripts": {
     "dev-pc": "pnpm --filter pc-demo dev",
     "dev-mobile": "pnpm --filter mobile dev",
+    "build-custom-utils": "pnpm --filter custom-utils build",
     "build-pc": "pnpm --filter pc-demo build",
     "build-mobile": "pnpm --filter mobile build"
   },

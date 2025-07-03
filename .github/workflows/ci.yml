@@ -26,6 +26,9 @@ jobs:
         run: pnpm install
 
       - name: 构建
+        run: pnpm run build-custom-utils
+
+      - name: 构建
         run: pnpm run build-pc
 
       - name: 部署到github pages
