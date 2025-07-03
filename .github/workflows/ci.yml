@@ -1,4 +1,4 @@
-name: 部署到github pages
+name: 面试cicd
 
 on:
   push:
