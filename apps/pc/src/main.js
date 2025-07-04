@@ -7,12 +7,14 @@ import App from './App.vue'
 import GlobalComp from './components/global-comp.vue'
 import router from './router'
 import registerDirectives from './directives'
+import { initStore } from '@/stores'
 
 const app = createApp(App);
 
 app.config.performance = true;
 app.component('GlobalComp', GlobalComp);
 registerDirectives(app);
+initStore(app)
 app.provide('appName', 'walker');
 app.use(router).use(VueVirtualScroller).mount('#app');
 

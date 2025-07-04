@@ -15,7 +15,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["vitest/globals", "jsdom"],
+    "types": ["vitest/globals", "jsdom", "pinia"],
     "paths": {
       "@/*": ["./src/*"]
     }
@@ -26,7 +26,9 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx", "vue-shims.d.ts",
+    "tests/**/*.tsx",
+    "vue-shims.d.ts",
+    "stores/**/*.ts"
   ],
   "exclude": ["node_modules", "dist"]
 } 
