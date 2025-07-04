@@ -1,5 +1,6 @@
 <template>
     <div>
+      <h1>{{ userStore.name }}</h1>
       <p class="bg-white dark:bg-black text-red-500 dark:text-white">{{ info.name }}</p>
       <button @click="changeName">修改名字第二部</button>
       <div></div>
@@ -27,8 +28,11 @@
   
   <script lang="ts" setup>
   import { ref, onMounted, shallowRef, defineAsyncComponent, onErrorCaptured } from 'vue'
+  import { useUserStore } from '@/stores'
   import Child from './children.vue'
   import Content from './content.vue'
+
+  const userStore = useUserStore()
 
   const AsyncComponent = defineAsyncComponent({
     loader: () => import('./async.vue'),
