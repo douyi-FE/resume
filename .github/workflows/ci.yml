@@ -30,6 +30,8 @@ jobs:
 
       - name: 构建
         run: pnpm run build-pc
+        env:
+          VITE_BASE: ${{ env.VITE_BASE }}
 
       - name: 部署到github pages
         uses: peaceiris/actions-gh-pages@v4
