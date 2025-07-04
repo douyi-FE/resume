@@ -25,6 +25,9 @@ jobs:
       - name: 安装依赖
         run: pnpm install
 
+      - name: 设置环境变量
+          run: echo "VITE_BASE=/resume/" >> $GITHUB_ENV
+
       - name: 构建
         run: pnpm run build-custom-utils
 
