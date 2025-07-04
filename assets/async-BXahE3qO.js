@@ -1,0 +1,1 @@
+import{m as n,c as s,o as c,a as o}from"./index-DGJDeH03.js";const r={};function t(a,e){return c(),s("div",null,e[0]||(e[0]=[o("h1",null,"Async",-1)]))}const f=n(r,[["render",t]]);export{f as default};
