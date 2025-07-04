@@ -1,7 +1,7 @@
 <template>
     <div>
       <p class="bg-white dark:bg-black text-red-500 dark:text-white">{{ info.name }}</p>
-      <button @click="changeName">修改名字</button>
+      <button @click="changeName">修改名字第二部</button>
       <div></div>
       <button @click="removeFirst">删除第一个</button>
       <Child v-for="item in items" :label="item.text" />
