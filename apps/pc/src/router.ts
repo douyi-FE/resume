@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-    history: createWebHistory('/resume/'),
+    history: createWebHashHistory(),
     routes: [
         { path: '/', component: () => import('@/views/home/home.vue') },
         { path: '/virtual-scroll', component: () => import('@/views/virtual-scroll/index.vue') },
