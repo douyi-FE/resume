@@ -6,6 +6,8 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -28,7 +30,9 @@
     "tests/**/*.ts",
     "tests/**/*.tsx",
     "vue-shims.d.ts",
-    "stores/**/*.ts"
+    "stores/**/*.ts",
+    "vite-env.d.ts",
+    "types"
   ],
   "exclude": ["node_modules", "dist"]
 } 

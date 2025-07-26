@@ -1,0 +1,22 @@
+{
+  "name": "custom-ui",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "dist/custom-ui.js",
+  "scripts": {
+    "build": "vite build --config vite.config.js"
+  },
+  "style": "dist/custom-ui.css",
+  "files": ["dist"],
+  "peerDependencies": {
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,6 +1,9 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
+import CustomUi from 'custom-ui';
+import 'custom-ui/dist/custom-ui.css';
+import 'custom-theme/dist/custom-theme.css';
 import VueVirtualScroller from 'vue-virtual-scroller'
 
 import App from './App.vue'
@@ -10,6 +13,8 @@ import registerDirectives from './directives'
 import { initStore } from '@/stores'
 
 const app = createApp(App);
+
+app.use(CustomUi);
 
 app.config.performance = true;
 app.component('GlobalComp', GlobalComp);

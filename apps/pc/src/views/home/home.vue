@@ -21,8 +21,12 @@
         <p v-if="showProgram">123</p>
       </Transition>
       <button @click="showProgram = !showProgram">组件</button>
-      <div></div>
-      
+      <h2>版本号：{{ appVersion }}</h2>
+      <a href="https://example.com/search?q=<script>alert('XSS')</script>" target="_blank">github</a>
+      <UiButton>123</UiButton>
+      <button @click="applyTheme('dark')">切换主题</button>
+      <br/>
+      <button @click="test">测试</button>
     </div>
   </template>
   
@@ -31,8 +35,10 @@
   import { useUserStore } from '@/stores'
   import Child from './children.vue'
   import Content from './content.vue'
-
+  import { applyTheme } from 'custom-theme'
+  import { http } from 'custom-shared'
   const userStore = useUserStore()
+  const appVersion = __APP_VERSION__;
 
   const AsyncComponent = defineAsyncComponent({
     loader: () => import('./async.vue'),
@@ -67,6 +73,13 @@
       name: '李四',
       age: 20
     }
+  }
+
+  function test() {
+    console.log(http);
+    http.get('/api/test').then((res: any) => {
+      console.log(res);
+    });
   }
 
   onMounted(() => {

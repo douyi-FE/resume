@@ -1,0 +1,12 @@
+{
+  "name": "custom-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/theme.js",
+  "scripts": {
+    "build": "vite build --config vite.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
