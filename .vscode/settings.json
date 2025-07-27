@@ -1,5 +1,10 @@
 {
-    "i18n-ally.localesPaths": [
-        "packages/custom-ui/src/locale"
-    ]
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.formatOnSave": true, // 启用保存时格式化
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 使用 Prettier 作为默认格式化工具
+  "i18n-ally.localesPaths": ["packages/custom-ui/src/locale"],
+  "prettier.configPath": "./prettier.config.js"
 }

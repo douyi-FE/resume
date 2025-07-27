@@ -1,8 +1,8 @@
 export const en = {
-    button: {
-        text: 'Button'
-    },
-    list: {
-        title: 'List',
-    },
-}
+  button: {
+    text: 'Button'
+  },
+  list: {
+    title: 'List',
+  },
+};

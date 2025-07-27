@@ -3,9 +3,9 @@ import { en } from './en';
 import { zh } from './zh';
 
 export const i18n = createI18n({
-    locale: 'zh',
-    messages: {
-        en,
-        zh,
-    },
-})
+  locale: 'zh',
+  messages: {
+    en,
+    zh,
+  },
+});

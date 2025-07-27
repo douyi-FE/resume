@@ -1,8 +1,8 @@
-import { httpGet } from '@/utils/http'
+import { httpGet } from '@/utils/http';
 
 export const getBasicData = () => {
-    return httpGet('/api/basic', {
-        page: 1,
-        pageSize: 10,
-    })
-}
+  return httpGet('/api/basic', {
+    page: 1,
+    pageSize: 10,
+  });
+};
