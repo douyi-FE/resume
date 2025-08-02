@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "key": "1",
+            "label": "Navigation One",
+            "title": "Navigation One",
+            "path": "/other",
+            "componentPath": "/src/views/other/index.vue",
+            "permission": [
+                "add"
+            ]
+        },
+        {
+            "key": "2",
+            "label": "Navigation Two",
+            "title": "Navigation Two"
+        },
+        {
+            "key": "sub1",
+            "label": "Navigation Three",
+            "title": "Navigation Three",
+            "children": [
+                {
+                    "key": "3",
+                    "label": "Option 3",
+                    "title": "Option 3"
+                },
+                {
+                    "key": "4",
+                    "label": "Option 4",
+                    "title": "Option 4"
+                },
+                {
+                    "key": "sub1-2",
+                    "label": "Submenu",
+                    "title": "Submenu",
+                    "children": [
+                        {
+                            "key": "5",
+                            "label": "Option 5",
+                            "title": "Option 5"
+                        },
+                        {
+                            "key": "6",
+                            "label": "Option 6",
+                            "title": "Option 6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "sub2",
+            "label": "Navigation Four",
+            "title": "Navigation Four"
+        }
+    ],
+    "status": 0,
+    "message": "success"
+}

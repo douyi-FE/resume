@@ -1,6 +1,10 @@
+import type { DirectiveBinding } from 'vue';
+
 export default {
-  mounted(el, binding) {
-    const { value: { tagetId, imgSrc } } = binding;
+  mounted(el: HTMLImageElement, binding: DirectiveBinding<{ tagetId: string; imgSrc: string }>) {
+    const {
+      value: { tagetId, imgSrc },
+    } = binding;
     const target: HTMLImageElement = document.getElementById(tagetId) as HTMLImageElement;
     if (target) {
       const callback = (entries: IntersectionObserverEntry[]) => {
@@ -19,5 +23,5 @@ export default {
       });
       observer.observe(el);
     }
-  }
+  },
 };

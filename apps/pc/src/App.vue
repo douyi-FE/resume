@@ -1,6 +1,6 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import { onCLS, onLCP, onFCP, onTTFB, onINP } from 'web-vitals'
+import Layout from '@/components/basic/layout.vue';
+import { onCLS, onLCP, onFCP, onTTFB, onINP } from 'web-vitals';
 
 // 上报函数（上传到你的后端或第三方平台）
 function sendToAnalytics(metric) {
@@ -9,15 +9,15 @@ function sendToAnalytics(metric) {
 }
 
 // 注册 web-vitals 采集
-onCLS(sendToAnalytics)
-onLCP(sendToAnalytics)
-onFCP(sendToAnalytics)
-onTTFB(sendToAnalytics)
-onINP(sendToAnalytics) 
+onCLS(sendToAnalytics);
+onLCP(sendToAnalytics);
+onFCP(sendToAnalytics);
+onTTFB(sendToAnalytics);
+onINP(sendToAnalytics);
 </script>
 
 <template>
   <main>
-    <RouterView />
+    <Layout />
   </main>
 </template>
