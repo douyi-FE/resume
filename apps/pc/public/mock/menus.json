@@ -12,8 +12,13 @@
         },
         {
             "key": "2",
-            "label": "Navigation Two",
-            "title": "Navigation Two"
+            "label": "grid布局",
+            "title": "grid布局",
+            "path": "/grid",
+            "componentPath": "/src/views/grid/index.vue",
+            "permission": [
+                "add"
+            ]
         },
         {
             "key": "sub1",
@@ -50,9 +55,24 @@
             ]
         },
         {
-            "key": "sub2",
-            "label": "Navigation Four",
-            "title": "Navigation Four"
+            "key": "chart",
+            "label": "图表",
+            "title": "图表",
+            "path": "/chart",
+            "componentPath": "/src/views/chart/index.vue",
+            "permission": [
+                "add"
+            ]
+        },
+        {
+            "key": "flow",
+            "label": "流程图",
+            "title": "流程图",
+            "path": "/flow",
+            "componentPath": "/src/views/flow/index.vue",
+            "permission": [
+                "add"
+            ]
         }
     ],
     "status": 0,

@@ -26,8 +26,8 @@ import asyncModules from '@/asyncModules';
 const router = useRouter();
 const collapsed = ref<boolean>(false);
 const selectedKeys = ref<string[]>(['1']);
-const handleMenuClick = (e: any) => {
-  router.push('/other');
+const handleMenuClick = ({ item }: any) => {
+  router.push(item.path);
 };
 
 const menuList = ref<any[]>([]);
